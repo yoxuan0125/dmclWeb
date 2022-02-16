@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2d4953;
+  margin-bottom: 2vh;
+}
+
+.container ul {
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+  background-color: var(--clr-grey-10);
+  text-decoration: none;
+}
+
+.container a {
+  color: black;
+}
+
+.container li {
+  line-height: 3rem;
+}
