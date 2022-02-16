@@ -1,7 +1,7 @@
 import React from "react";
 import "./ServiceFeature.css";
 import image_1 from "../picture/surfingboard.jpg";
-import image_2 from "../picture/coaching.jpg";
+import image_2 from "../picture/coaching2.jpg";
 import image_3 from "../picture/shop.jpg";
 
 const ServiceFeature = () => {
