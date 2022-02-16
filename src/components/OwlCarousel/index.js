@@ -1,6 +1,4 @@
 import React from "react";
-import LeftArrow from "../picture/left-arrow.svg";
-import RightArrow from "../picture/right-arrow.svg";
 import "./OwlCarousel.css";
 
 import Owlpic from "../picture/blackman.png";
@@ -8,14 +6,6 @@ import Owlpic from "../picture/blackman.png";
 import Slider from "react-slick";
 
 export default function OwlCarousel({ data }) {
-	const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-		<img src={LeftArrow} alt="prevArrow" {...props} />
-	);
-
-	const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-		<img src={RightArrow} alt="nextArrow" {...props} />
-	);
-
 	const settings = {
 		dots: false,
 		infinite: true,
