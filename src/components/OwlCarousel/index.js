@@ -28,6 +28,16 @@ export default function OwlCarousel({ data }) {
 					arrows: false,
 				},
 			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					speed: 500,
+					arrows: false,
+				},
+			},
 		],
 	};
 	return (
