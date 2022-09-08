@@ -11,7 +11,7 @@
 
 .container ul {
   display: flex;
-  width: 70vw;
+  width: 80vw;
   justify-content: space-around;
   background-color: var(--clr-grey-10);
   text-decoration: none;

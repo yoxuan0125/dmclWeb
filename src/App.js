@@ -1,49 +1,27 @@
-import "./App.css";
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import ServiceFeature from "./components/ServiceFeature";
-import OwlCarousel from "./components/OwlCarousel";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-const data = [
-	{
-		text: "店家服務熱心 環境很棒",
-	},
-	{
-		text: "租板便宜，教練也很用心",
-	},
-	{
-		text: "nice",
-	},
-	{
-		text: "everything is good",
-	},
-	{
-		text: "everything is good",
-	},
-	{
-		text: "everything is good",
-	},
-	{
-		text: "everything is good",
-	},
-	{
-		text: "everything is good",
-	},
-];
+import "./App.css";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
+import Teacher from "./components/Teacher";
+import Research from "./components/Research";
 
 function App() {
-	return (
-		<div className="App">
-			<Navbar />
-			<Sidebar />
-			<HeroSection />
-			<ServiceFeature />
-			<OwlCarousel data={data} />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/teacher" element={<Teacher />}></Route>
+          <Route path="/research" element={<Research />}></Route>
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;

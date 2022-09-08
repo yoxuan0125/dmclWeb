@@ -1,0 +1,73 @@
+.taecherForm {
+  padding-top: 100px;
+  /* height: 100%; */
+}
+
+.img-responsive {
+  width: 212px;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.tabContainer {
+  padding: 40px 60px;
+  width: 70vw;
+}
+
+.content {
+  width: 70vw;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.tabContainer .tabTitle {
+  margin-bottom: 40px;
+}
+
+.tabContainer .tabTitle::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 0 0.1em 0;
+  height: 1em;
+  margin-top: 0.4em;
+  width: 70%;
+  margin-left: -5px;
+  color: rgba(191, 190, 190, 0.432);
+}
+
+.tabContainer ul {
+  list-style: disc;
+}
+
+.content ul li {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.smallMenu {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .tabsText {
+    display: none !important;
+  }
+
+  .img-responsive {
+    width: 120px;
+    height: 145px;
+    margin-bottom: 20px;
+  }
+
+  .tabContainer {
+    padding: 40px 60px !important;
+    width: initial !important;
+  }
+
+  .css-9pwssl {
+    height: initial !important;
+    width: 100%;
+    justify-content: center;
+  }
+}

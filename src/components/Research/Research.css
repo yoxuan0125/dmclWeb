@@ -1,0 +1,7 @@
+.tabs {
+  padding: 100px 20px 0 20px;
+  margin-bottom: 100px;
+  min-height: 75vh;
+  height: 100%;
+  position: relative;
+}
