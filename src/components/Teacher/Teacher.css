@@ -24,7 +24,7 @@
   margin-bottom: 40px;
 }
 
-.tabContainer .tabTitle::before {
+.tabContainer .tabTitle:before {
   content: "";
   position: absolute;
   border-style: solid;
@@ -69,5 +69,9 @@
     height: initial !important;
     width: 100%;
     justify-content: center;
+  }
+
+  .smallMenu {
+    display: initial;
   }
 }

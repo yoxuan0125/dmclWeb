@@ -68,7 +68,7 @@ export default function VerticalTabs() {
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
-          選單
+          查看更多
         </Button>
         <Menu
           id="demo-positioned-menu"
